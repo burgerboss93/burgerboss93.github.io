@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lane Simkins</title>
+
+        <link rel = "stylesheet" type = "text/css" href="resources/css/style.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,200&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <header class="flex-container">
+            <img src="resources/images/logo.jpg">
+            <nav>
+                <span><a href="#home">Home</a></span>
+                <span><a href="#bio">Bio</a></span>
+                <span><a href="#music">Music</a></span>
+                <span><a href="#contact">Contact</a></span>
+                <span class="social"><a href="https://www.facebook.com/Lanesimkins/" class="fa fa-facebook"></a></span>
+                <span class="social"><a href="https://www.instagram.com/lanesimkins/" class="fa fa-instagram"></a></span>
+
+            </nav>
+        </header>
+        
+        <div id= "home" class="flex-container">
+            <img src="resources/images/header.png">
+        </div>
+
+        <span id= "bio" class="title flex-container">Bio</span>
+        <div id= "biobox" class= "flex-container">
+            <div class="biocontent">
+                <p>Often found with coffee in hand, New Jersey based singer/songwriter, Lane Simkins, offers listeners an honest and raw experience through his fresh lyricism and musicality. With a sound that portrays a
+                100% USDA certified organic gluten free indie/folk/ rock vibe, Lane's
+                tunes tell real stories that provide a transparent glimpse of life's
+                struggles and wins.</p>
+            </div>
+            <div class= "bioimage">
+                <img src="resources/images/brendan_brendan-r2-076-36a.JPG">
+                <img src="resources/images/brendan_brendan-r2-066-31a.JPG">
+                <img src="resources/images/FDF73DF2-BC8F-4158-AD3C-D0EC97E7DC4C 2.JPG">
+                <img src="resources/images/img_0780.JPG">
+            </div>
+        </div>
+        <span id="music" class="title flex-container">Music</span>
+        <div class="musicbox flex-container">
+            <div class="musiclinks">
+                <span><a href="https://music.apple.com/us/artist/lane-simkins/1139991297">iTunes</a></span>
+                <span><a href="https://open.spotify.com/artist/4rI9EyUzQ20RvOJTcbC4TN?si=sFOqVsHvTcWb5nfDt9Nwqw">Spotify</a></span>
+                <span><a href="https://tidal.com/browse/artist/8035337">Tidal</a></span>
+            </div>
+            <div class="albums">
+                <img src="resources/images/lanealbum1.jpg">
+                <img src="resources/images/lanealbum2.jpg">
+
+            </div>
+        </div>
+        <span id="contact" class="title flex-container">Contact</span>
+        <div class="contact-section flex-container">
+            <div class="container">
+              <form name="myemailform" action="action_page.php">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email" placeholder="Your email">
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
+              </div> 
+        </div>
+        <script language="JavaScript">
+          // Code for validating the form
+          // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+          // for details
+          var frmvalidator  = new Validator("myemailform");
+          frmvalidator.addValidation("name","req","Please provide your name"); 
+          frmvalidator.addValidation("email","req","Please provide your email"); 
+          frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+          </script>
+
+        
+        <footer>
+
+        </footer>
+
+    </body>
+
+</html>
