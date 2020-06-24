@@ -1,0 +1,216 @@
+/*Lane Simkins Style Sheet*/
+
+/*Universal Styles*/
+body {
+    background-color: black;
+    color: #c1a583
+    
+}
+
+a {
+    color: #c1a583;
+    text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+
+/*Header*/
+header {
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+    padding: 10px; 
+}
+
+nav {
+    text-align: center;
+    flex-grow: 1;
+}
+
+nav span {
+    display: inline-block;
+    padding: 10px 10px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+}
+
+
+  /*Home*/
+
+#home {
+      align-content: center;
+      padding-top: 120px;
+  }
+
+.title {
+      padding: 50px 0px 25px 0px;
+      font-weight: 700;
+      font-size: 35px; 
+      font-family: 'Josefin Sans', sans-serif;
+  }
+
+  /*Bio*/
+#biobox {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: space-around;
+  }
+
+.biocontent {
+      height: 50px;
+      padding: 10px 40px 50px 40px;
+      text-align: center;
+      font-family: 'Josefin Sans', sans-serif;
+      
+  }
+
+.bioimage {
+    padding: 20px 50px 25px 50px;  
+  }
+
+.bioimage img {
+      height: 300px;
+      padding: 10px 10px;
+  }
+
+/*Music*/
+.musicbox {
+   width: 100%;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.musiclinks {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px 0px 35px 0px;
+}
+
+.musiclinks span {
+    padding: 50px 50px; 
+    font-size: 20px;
+}
+
+.albums img{
+    height: 400px;
+    padding: 10px 10px;
+}
+
+/*Contact*/
+.contact-section {
+    padding: 30px 0 50px 0;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    flex-grow: 1;
+}
+
+ /* Style inputs, select elements and textareas */
+ input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    header {
+      height: 100px;
+      position: fixed;
+      width: 100%;
+      background-color: black;
+      z-index: 1;
+      align-items: center;
+    }
+    header img {
+      height: 50px;
+      padding: 10px 0px 0px; 
+    }
+    nav {
+      text-align: center;
+      flex-grow: 1;
+      padding-bottom: 20px;
+    }
+  
+    nav span {
+      display: inline-block;
+      padding: 0px 10px 30px 10px;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+  
+  
+  } 
+
+
